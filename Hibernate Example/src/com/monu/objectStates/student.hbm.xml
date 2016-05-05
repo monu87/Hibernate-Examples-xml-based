@@ -1,0 +1,19 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    
+    <hibernate-mapping>
+    	<class name="com.monu.objectStates.Student" table="student" schema="forgithub">
+    		<id column="std_id" name="id"  type="int">
+    			<generator class="assigned"/>
+    		</id>
+    		<property name="name" column="std_name"/>
+    		<property name="roll" column="std_roll" type="int"/>
+    		<property name="age" column="std_age" type="int"/>
+    		<property name="email" column="std_email"/>
+    		<property name="course" column="course"/>
+    		<property name="branch" column="branch"/>
+    		
+    	
+    	</class>
+    </hibernate-mapping>
